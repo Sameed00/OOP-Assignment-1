@@ -100,15 +100,15 @@ public:
 };
 
 int main() {
-    cout << "Huzaifa Nadeem"<<endl;
-	cout << "24K-0533"<<endl;
+    cout << "Sameed Imran"<<endl;
+	cout << "24K-1036"<<endl;
 	cout << "BCS-2F"<<endl<<endl;
 	
 	RentalSystem system;
     system.registerUser("Ali", 25, "Full", "123-456-7890", 1);
     system.registerUser("Bhavesh", 20, "Learner", "987-654-3210", 2);
 
-    system.addVehicle("Sedan", 50.0, "Full");
+    system.addVehicle("Alto", 50.0, "Full");
     system.addVehicle("Scooter", 20.0, "Learner");
 
     cout << "Available Vehicles:" << endl;
