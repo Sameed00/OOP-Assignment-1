@@ -100,22 +100,21 @@ public:
 };
 
 int main() {
-    cout << "Huzaifa Nadeem"<<endl;
-	cout << "24K-0533"<<endl;
+    cout << "Sameed Imran"<<endl;
+	cout << "24K-1036"<<endl;
 	cout << "BCS-2F"<<endl<<endl;
 	
 	TransportSystem system;
-    system.register_student(533, "Huzaifa Nadeem");
+    system.register_student(533, "Sameed Imran");
     Route *route = new Route();
     route->add_stop("FAST University");
-    route->add_stop("Johar Mor");
-    route->add_stop("Gulshan Chowrangi");
-    route->add_stop("NIPA");
-    route->add_stop("Maskan");
-    route->add_stop("Dhoraji");
-    route->add_stop("Gulistan-e-Johar Block 15");
+    route->add_stop("Drigh Road");
+    route->add_stop("Shahre Faisal");
+    route->add_stop("Shahre Quiadeen");
+    route->add_stop("PECHS Block 2");
+    route->add_stop("Tariq Road");
     system.manage_routes(route);
-    Bus *bus = new Bus("5B", route);
+    Bus *bus = new Bus("7B", route);
     cout << "Bus assigned to route successfully. Bus ID: " << bus->bus_id << endl;
     cout << "Transport System Initialized Successfully!" << endl;
     delete bus;
